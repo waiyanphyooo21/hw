@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Elements</title>
+  <style>
+    body {
+      background-color: #f8fafc;
+      color: #0f172a;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #1d4ed8;
+      border-bottom: 2px solid #1d4ed8;
+      padding-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #2563eb;
+      margin-top: 32px;
+    }
+
+    h3 {
+      font-size: 22px;
+      color: #2563eb;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    b {
+      color: #ca8a04;
+    }
+
+    i {
+      color: #7e22ce;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 16px;
+      border-left: 4px solid #3b82f6;
+      font-style: italic;
+      color: #334155;
+    }
+
+    code {
+      background-color: #e2e8f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .highlight {
+      background-color: #fde68a;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    dd {
+      margin-left: 16px;
+      margin-bottom: 8px;
+    }
+
+    table {
+      width: auto;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0f2fe;
+      color: #0c4a6e;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1f5f9;
+    }
+
+    /* Additions for new testing elements */
+    input, textarea, select {
+      margin: 8px 0;
+      padding: 6px;
+      border: 1px solid #94a3b8;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    img {
+      max-width: 200px;
+      margin-top: 10px;
+    }
+
+    audio, video {
+      margin-top: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    progress, meter {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 8px;
+    }
+
+    section, article, footer {
+      margin-top: 40px;
+      padding: 16px;
+      border: 1px dashed #94a3b8;
+      background-color: #f1f5f9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Original Content -->
+  <h1>HTML Elements</h1>
+
+  <h2>Headers & Paragraph</h2>
+  <h3>This is a Subheading</h3>
+  <p>This is a paragraph with <b>bold</b> and <i>italic</i> text.<br>This is a line break above this sentence.</p>
+
+  <h2>Unordered List</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <h2>Ordered List</h2>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+
+  <h2>Description List</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>The structure of web content.</dd>
+    <dt>CSS</dt>
+    <dd>Styles for web content.</dd>
+    <dt>JavaScript</dt>
+    <dd>Interactive on web pages.</dd>
+  </dl>
+
+  <h2>Block Quote</h2>
+  <blockquote>
+    Hello World!
+  </blockquote>
+
+  <h2>Subscript & Superscript</h2>
+  <p>Water formula: H<sub>2</sub>O<br>Einstein's formula: E = mc<sup>2</sup></p>
+
+  <h2>Phrase Elements</h2>
+  <p>This is a <span class="highlight">highlighted phrase</span> and this is <code>inline code</code>.</p>
+
+  <h2>Sample Table</h2>
+  <table>
+    <tr>
+      <th>Language</th>
+      <th>Type</th>
+      <th>Popular Use</th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>Markup</td>
+      <td>Structure</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>Style</td>
+      <td>Design</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>Script</td>
+      <td>Interaction</td>
+    </tr>
+  </table>
+
+  <h2>Form Elements</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" rows="4"></textarea><br>
+
+    <label for="lang">Select Language:</label><br>
+    <select id="lang">
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+    </select><br>
+
+    <label><input type="checkbox"> Subscribe to newsletter</label><br>
+    <label><input type="radio" name="gender"> Male</label>
+    <label><input type="radio" name="gender"> Female</label><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Image</h2>
+  <img src="https://via.placeholder.com/200x120.png?text=Sample+Image" alt="Sample">
+
+  <h2>Audio & Video</h2>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <video controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+
+  <h2>Progress & Meter</h2>
+  <label>Progress (Loading...):</label>
+  <progress value="50" max="100"></progress><br>
+
+  <label>Meter (Storage):</label>
+  <meter value="0.6">60%</meter>
+
+  <section>
+    <h2>Section Example</h2>
+    <p>This section contains a topic-specific content block.</p>
+  </section>
+
+  <article>
+    <h2>Article Example</h2>
+    <p>This is an article. It could represent a blog post or news snippet.</p>
+  </article>
+
+  <footer>
+    <p>Footer &copy; 2025 | Your Website</p>
+  </footer>
+
+</body>
+</html>
